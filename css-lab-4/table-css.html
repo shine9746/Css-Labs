@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        
+        <meta charset="UTF-8"> 
+        <meta name="description" content="Css tutorials">
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <title>css-lab-4</title>
+
+    
+    <!--Lab-Features
+
+        *Created table
+        according to lab
+        *Used only inline 
+        and internal css
+        *Not exactly similar
+        to lab-table-figure
+        interms of styles
+        *Pagination created
+        using css only
+        *Added active & hover
+        status to pagination
+    -->
+
+
+
+        <style>
+
+
+
+
+
+            /*body-style*/
+            #maindiv{
+               border:5px solid black;
+               padding: 40px 40px;
+               margin: 50px;   
+            }
+
+
+            
+            /*header-section-style*/
+            #header h1{
+               text-align: center;
+               font-weight: 100;
+               position: relative;
+               top:60px;
+               right: 40px;
+            }
+
+            #header input{
+                position: relative;
+                float: right;
+                right:255px;
+                width:200px  
+            }
+            
+            #drop{
+               position: relative;
+               left:250px;
+            }
+
+
+
+
+
+            /*table-section-style*/
+            table,th,td{
+                border:1px solid rgba(0, 0, 0, 0.116);
+                border-collapse: collapse;
+                margin:100px 500px 150px 250px;
+                width: 1200px;
+                height: 60px;
+                text-align: justify;
+                position: relative;
+                left:8px;  
+            }
+
+            thead{
+               font-size: 20px;
+            }
+          
+            
+
+            
+            /*pagination-styling*/
+            .pagination{   
+                position: relative;
+                float:right;
+                right: 255px;
+                bottom: 100px;     
+            } 
+
+            .pagination a{                
+                font-size: 15px;
+                padding:10px 15px;
+                border-radius: 50%;
+                background: rgba(153, 151, 151, 0.123);
+            }
+
+            .pagination :hover{
+                background-color: #39c7ff;
+             }
+
+            /*pagination/previous-next-styles*/
+             #a1 {
+                background: rgba(153, 151, 151, 0.123);
+                border-radius: 5px 5px;
+                font-size: 15px;
+                padding:10px 15px;
+            }
+            
+             #a1:hover{
+                background-color: #39c7ff;
+            }
+            
+            /*pagination-3-active*/
+            .pagination a.active{
+                background-color: #39c7ff;
+            }
+            
+    
+
+
+            /*referral-text*/
+           #para{
+               position: relative;
+               bottom:100px;
+               left: 255px;
+            }
+
+          
+           
+           
+            /*global-value*/
+            a{
+               text-decoration: none;
+            }
+
+       
+
+         
+         
+         
+        </style>
+
+    </head>
+
+
+    <body>
+
+<!--main-div-starts-->
+<div id="maindiv">
+
+
+<div id="header">
+
+
+            <h1>Customer <strong>Details</strong></h1>
+            
+            <input  type="search" value="search" name="search">
+     
+            
+<!--Dropdown-starts--->
+<div id="drop"> 
+            
+            <label for="dropdown">show</label>
+
+            <select id="dropdown" name="dropdown" >
+
+                <option value="number1">1</option>
+                <option value="number2" >2</option>
+                <option value="number3" >3</option>
+                <option value="number4">4</option>
+                <option value="number5" selected>5</option>
+                
+            </select>
+
+            <label>entries</label>
+
+</div>  
+<!--Dropdown-ends-->  
+
+</div>  
+
+<!--header-section-ends-->
+
+
+
+
+
+<!--Table-Starts-->
+<div>
+
+<table>
+
+    <!--table-head-starts-->
+
+    <!--In table head section  span added to style table headers fonts
+        and aswell to style html entities(for caret(triangle))-->
+    <thead>
+
+     <tr>
+
+        <th>#</th>
+
+
+        <th>
+            <span style="position: relative;top:12px;">Name</span>
+
+        <a href="#">
+
+            <span style="position: relative;top:6px;left:9px;font-size: 12px;"> &#9650;</span> 
+        </a>
+
+            <br>  
+
+        <a href="#"><span style="position: relative;bottom:7px;left:64px;font-size: 12px;">&#9660;
+
+            </span>
+        </a>
+        </th>
+        
+
+        <th >Address</th>  
+
+
+
+        <th>
+            <span style="position: relative;top:12px;">City</span>
+
+        <a href="#">
+            
+            <span style="position: relative;top:6px;left:9px;font-size: 12px;"> &#9650;</span>
+
+        </a> 
+
+            <br>
+
+        <a href="#"><span style="position: relative;bottom:7px;left:51px;font-size: 12px;">&#9660;
+
+            </span>
+        </a>
+        </th>
+
+
+
+        <th>Pincode</th>
+
+        <th>
+            <span style="position: relative;top:12px;">Country</span>
+
+        <a href="#">
+
+            <span style="position: relative;top:6px;left:9.5px;font-size: 12px;"> &#9650;</span> 
+
+        </a>
+            <br>  
+
+        <a href="#">
+
+            <span style="position: relative;bottom:7px;left:87px;font-size: 12px;">&#9660;</span>
+        </th>
+
+        </a>
+
+        <th >Actions</th>
+
+     </tr>
+
+    </thead>
+    <!--table-head-ends-->
+
+
+
+    <!--table-body-starts-->
+
+    <!--In table body,span added to style html entities used for the
+        visibility,pencil,trashbin-icons(eye,pencil,trashbin)-->
+        
+    <tbody>
+
+        <tr>
+            <td>1</td>
+            <td>Thomas Hardy</td>
+            <td>89 Chiarsco Rd.</td>
+            <td>Portland</td>      
+            <td>91219</td>  
+            <td>USA</td>  
+            <td>
+                <a href="#"><span style="font-size: 35px;color:rgba(0, 172, 252, 0.795);">&#128065;</span></a>
+                <a href="#"><span style="font-size: 35px;color:rgba(252, 176, 63, 0.795);">&#128393;</span></a>
+                <a href="#"><span  style="font-size: 35px;color:red">&#128465;</span></a>
+            </td>  
+        </tr>
+
+
+        <tr>
+            <td>2</td>
+            <td>Maria Anders</td>
+            <td>Obere Str.57</td>
+            <td>Berlin</td>      
+            <td>12209</td>  
+            <td>Germany</td>  
+            <td>
+                <a href="#"><span style="font-size: 35px;color:rgba(0, 172, 252, 0.795);">&#128065;</span></a>
+                <a href="#"><span style="font-size: 35px;color:rgba(252, 176, 63, 0.795);">&#128393;</span></a>
+                <a href="#"><span  style="font-size: 35px;color:red">&#128465;</span></a>
+            </td>    
+        </tr>
+
+
+        <tr>
+            <td>3</td>
+            <td>Fran Wilson</td>
+            <td>C/Araquil,67</td>
+            <td>Madrid</td>      
+            <td>28023</td>  
+            <td>Spain</td>  
+            <td>
+                <a href="#"><span style="font-size: 35px;color:rgba(0, 172, 252, 0.795);">&#128065;</span></a>
+                <a href="#"><span style="font-size: 35px;color:rgba(252, 176, 63, 0.795);">&#128393;</span></a>
+                <a href="#"><span  style="font-size: 35px;color:red">&#128465;</span></a>
+            </td>  
+
+
+        <tr>
+            <td>4</td>
+            <td>Dominic Perrier</td>
+            <td>25,rue Lauriston</td>
+            <td>Paris</td>      
+            <td>75016</td>  
+            <td>France</td>  
+            <td>
+                <a href="#"><span style="font-size: 35px;color:rgba(0, 172, 252, 0.795);">&#128065;</span></a>
+                <a href="#"><span style="font-size: 35px;color:rgba(252, 176, 63, 0.795);">&#128393;</span></a>
+                <a href="#"><span  style="font-size: 35px;color:red">&#128465;</span></a>
+            </td>  
+        
+ 
+
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Martin Blank</td>
+            <td>Via Monteblanco 34</td>
+            <td>Turin</td>      
+            <td>10100</td>  
+            <td>Italy</td>  
+            <td>
+                <a href="#"><span style="font-size: 35px;color:rgba(0, 172, 252, 0.795);">&#128065;</span></a>
+                <a href="#"><span style="font-size: 35px;color:rgba(252, 176, 63, 0.795);">&#128393;</span></a>
+                <a href="#"><span  style="font-size: 35px;color:red">&#128465;</span></a>
+            </td>   
+             
+ 
+        </tr>
+  
+
+    </tbody>
+    <!--table-body-ends-->
+
+  
+</table>
+
+</div>
+
+<!--Table-Ends-->
+
+
+
+
+<!--Pagination-starts-->
+
+<div class="pagination">
+
+
+               <a href="#" id="a1">Previous</a>
+
+                &nbsp;&nbsp;
+
+               <a href="#" >1</a>
+                &nbsp;&nbsp;
+
+               <a   href="#">2</a>
+                &nbsp;&nbsp;
+
+               <a class="active" href="#">3</a>
+                &nbsp;&nbsp;
+
+               <a href="#">4</a>
+                &nbsp;&nbsp;
+
+               <a href="#">5</a>
+                &nbsp;&nbsp;
+    
+               <a href="#" id="a1">Next</a>
+
+
+</div>
+
+<!--Pagination-ends-->
+
+
+
+<!--Referral-words-->
+
+          <p id="para">Showing <strong>5</strong> out of <strong>25</strong> entries</p>
+    
+<!--Referral-words-ends-->
+
+
+
+
+</div>
+<!--main-div-ends-->
+
+
+
+    </body>
+</html>
